@@ -95,8 +95,6 @@ module.exports = {
             let webpackContent = fs.readFileSync(webpackPath).toString();
             webpackContent = webpackContent.replace('{{style}}', require(webpackStylePath));
 
-            console.info(webpackContent);
-
             const webpackTargetPath = path.join(tempPath, 'build', 'webpack.config.js');
             fs.writeFileSync(webpackTargetPath, webpackContent);
         }
