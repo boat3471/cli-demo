@@ -1,0 +1,7 @@
+{
+    "build": "集成构建命令",
+    "directories": {
+        "static": "dist/static",
+        "html": "dist/html"
+    }
+}

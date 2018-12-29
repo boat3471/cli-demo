@@ -1,0 +1,14 @@
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "node": "8"
+                }
+            }
+        ]
+    ],
+    "minified": true,
+    "comments": false
+}

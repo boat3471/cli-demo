@@ -1,0 +1,69 @@
+{
+    "name": "",
+    "version": "1.0.0",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": {
+        "name": "",
+        "email": ""
+    },
+    "keywords": [],
+    "engines": {
+        "node": "^8.1.0"
+    },
+    "dependencies": {
+        "react": "16.7.0",
+        "react-dom": "16.7.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/plugin-proposal-class-properties": "^7.2.3",
+        "@babel/preset-env": "^7.2.3",
+        "@babel/preset-react": "^7.0.0",
+        "babel-eslint": "^9.0.0",
+        "babel-loader": "^8.0.4",
+        "babel-preset-react": "^6.24.1",
+        "clean-webpack-plugin": "^1.0.0",
+        "cross-env": "^5.2.0",
+        "css-loader": "^2.1.0",
+        "cssnano": "^4.1.8",
+        "eslint": "^5.11.1",
+        "eslint-config-react-app": "^3.0.6",
+        "eslint-plugin-flowtype": "^2.50.3",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^6.1.2",
+        "eslint-plugin-react": "^7.12.0",
+        "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+        "file-loader": "^3.0.1",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.5.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.1",
+        "postcss-loader": "^3.0.0",
+        "style-loader": "^0.23.1",
+        "stylelint": "^9.9.0",
+        "stylelint-config-standard": "^18.2.0",
+        "stylelint-order": "^2.0.0",
+        "uglifyjs-webpack-plugin": "^2.1.1",
+        "url-loader": "^1.1.2",
+        "webpack": "^4.28.2",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.14"
+    },
+    "scripts": {
+        "build": "node scripts/build.js",
+        "start": "node scripts/start.js"
+    },
+    "browserslist": [],
+    "stylelint": {
+        "extends": "./build/.stylelintrc.js"
+    },
+    "eslintConfig": {
+        "extends": "./build/.eslintrc.js"
+    },
+    "bugs": {},
+    "homepage": "",
+    "license": "UNLICENSED"
+}
