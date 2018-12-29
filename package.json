@@ -42,8 +42,8 @@
         "npm": ">= 5.x"
     },
     "repository": {
-        "type": "git",
-        "url": "git@code.aliyun.com:febb/cli-demo.git"
+        "type": "github",
+        "url": "https://github.com/boat3471/cli-demo.git"
     },
     "bugs": {
         "url": ""
