@@ -2,10 +2,9 @@ const path = require('path');
 const fs = require('fs-extra');
 
 module.exports = (config) => {
-    const rootPath = __rootPath;
-    const projectPath = path.join(rootPath, config.projectName);
-    const tempPath = path.join(__dirname, '../../', 'temp');
-    const generatePath = path.join(__dirname, 'generates', config.projectType);
+    const projectPath = config.projectPath;
+    const tempPath = path.join(__rootPath, 'temp');
+    const generatePath = path.join(__rootPath, 'generates', config.projectType);
 
     // 创建项目根目录
     fs.mkdirsSync(projectPath);

@@ -19,7 +19,7 @@ function cancel() {
 async function sureWorkDir() {
     return await prompts({
         type: 'select',
-        message: `工作目录：${__rootPath}`,
+        message: `工作目录：${__currentPath}`,
         name: 'sureWorkDir',
         initial: 1,
         choices: [
@@ -49,7 +49,7 @@ async function sureProjectName() {
             if (!value || value.length < 4 || !/^[a-z\-]{4,32}$/.test(value)) {
                 return '项目名不能为空，且长度至少4个字符，只能包含（小写字母、-符号）';
             }
-            const projectPath = path.join(__rootPath, value);
+            const projectPath = path.join(__currentPath, value);
             if (fs.pathExistsSync(projectPath)) {
                 return '项目名已存在，请修改项目名称';
             }
@@ -151,6 +151,8 @@ module.exports = async ([lv1]) => {
     await sureProjectName().then((res) => {
         Object.assign(projectConfig, res);
     });
+
+    projectConfig.projectPath = path.join(__currentPath, projectConfig.projectName);
 
     // 调用项目生成器，根据配置生成项目
     await generator(projectConfig);

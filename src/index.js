@@ -9,6 +9,7 @@ global.__config = {};
 global.__package = require(packagePath);
 global.__userPath = userPath;
 global.__rootPath = rootPath;
+global.__currentPath = process.cwd();
 global.__configPath = path.normalize(path.join(userPath, `.${__package.name}-rc`));
 global.__pidPath = path.normalize(path.join(userPath, `.${__package.name}-pid`));
 global.__cmdName = Object.keys(__package.bin)[0];

@@ -11,7 +11,8 @@
         "cli-demo": "cmd.js"
     },
     "files": [
-        "core",
+        "src",
+        "generates",
         "index.js",
         "cmd.js",
         "README.md"
@@ -30,6 +31,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.1.2",
+        "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
         "@babel/plugin-transform-runtime": "^7.1.0",
         "@babel/preset-env": "^7.1.0",
         "cross-env": "^5.2.0",

@@ -1,2 +1,3 @@
 #!/usr/bin/env node
-require('./core/index');
+// require('./lib/index');
+require('./src');

@@ -9,6 +9,9 @@
             }
         ]
     ],
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread"
+    ],
     "minified": true,
     "comments": false
 }
