@@ -2,7 +2,7 @@
 
 安装
 ```
-npm i cli-demo -g
+npm i zpmc-cli-demo -g
 ```
 
 使用
